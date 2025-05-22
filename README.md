@@ -31,7 +31,8 @@ Searched for any file that had the string "tor" in it and discovered what looks 
 
 **Query used to locate events:**
 
-```kql
+``` kql
+
 DeviceFileEvents  
 | where DeviceName == "shire"  
 | where InitiatingProcessAccountName == "mykal"  
@@ -50,7 +51,8 @@ Searched for any `ProcessCommandLine` that contained the string "tor-browser-win
 
 **Query used to locate event:**
 
-```kql <img width="400" src="https://github.com/user-attachments/assets/44bac428-01bb-4fe9-9d85-96cba7698bee" alt="Tor Logo with the onion and a crosshair on it"/>
+```kql
+<img width="400" src="https://github.com/user-attachments/assets/44bac428-01bb-4fe9-9d85-96cba7698bee" alt="Tor Logo with the onion and a crosshair on it"/>
 
 # Threat Hunt Report: Unauthorized TOR Usage
 - [Scenario Creation](https://github.com/joshmadakor0/threat-hunting-scenario-tor/blob/main/threat-hunting-scenario-tor-event-creation.md)
