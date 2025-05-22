@@ -82,12 +82,13 @@ Searched for any file that had the string "tor" in it and discovered what looks 
 
 **Query used to locate events:**
 
-```kql
+````
+kql
 DeviceFileEvents  
 | where DeviceName == "shire"  
 | where InitiatingProcessAccountName == "mykal"  
 | where FileName contains "tor"  
-| where Timestamp >= datetime(2024-11-08T22:14:48.6065231Z)  
+| where Timestamp >= datetime(May 11, 2025 2:15:29pm)  
 | order by Timestamp desc  
 | project Timestamp, DeviceName, ActionType, FileName, FolderPath, SHA256, Account = InitiatingProcessAccountName
 ```
@@ -101,7 +102,7 @@ Searched for any `ProcessCommandLine` that contained the string "tor-browser-win
 
 **Query used to locate event:**
 
-```kql
+``kql
 
 DeviceProcessEvents  
 | where DeviceName == "shire"  
