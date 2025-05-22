@@ -52,7 +52,7 @@ Searched for any `ProcessCommandLine` that contained the string "tor-browser-win
 **Query used to locate event:**
 
 ```kql
-<img width="400" src="https://github.com/user-attachments/assets/44bac428-01bb-4fe9-9d85-96cba7698bee" alt="Tor Logo with the onion and a crosshair on it"/>
+
 
 # Threat Hunt Report: Unauthorized TOR Usage
 - [Scenario Creation](https://github.com/joshmadakor0/threat-hunting-scenario-tor/blob/main/threat-hunting-scenario-tor-event-creation.md)
@@ -185,7 +185,7 @@ DeviceNetworkEvents
 
 - **Timestamps:**
   - `May 11, 2025 2:17:12 PM` - Connected to `195.15.242.99` on port `9001`.
-  - `May 11, 2025 2:51:40 PM` - Local connection to `144.76.223.174` on port `9001`.
+  - `May 11, 2025 2:17:19 PM` - Local connection to `127.0.0.1` on port  `9150`.
 - **Event:** Additional TOR network connections were established, indicating ongoing activity by user "employee" through the TOR browser.
 - **Action:** Multiple successful connections detected.
 
@@ -211,7 +211,7 @@ TOR usage was confirmed on the endpoint `shire` by the user `mykal`. The device 
 ---
 
 ```
-<img width="1212" alt="image" src="https://github.com/user-attachments/assets/b07ac4b4-9cb3-4834-8fac-9f5f29709d78">
+
 
 ---
 
@@ -285,15 +285,15 @@ DeviceNetworkEvents
 ### 5. Additional Network Connections - TOR Browser Activity
 
 - **Timestamps:**
-  - `2024-11-08T22:18:08Z` - Connected to `194.164.169.85` on port `443`.
-  - `2024-11-08T22:18:16Z` - Local connection to `127.0.0.1` on port `9150`.
+  - `May 11, 2025 2:17:12 PM` - Connected to `195.15.242.99` on port `9001`.
+  - `May 11, 2025 2:17:19 pm` - Local connection to `127.0.0.1` on port `9150`.
 - **Event:** Additional TOR network connections were established, indicating ongoing activity by user "employee" through the TOR browser.
 - **Action:** Multiple successful connections detected.
 
 ### 6. File Creation - TOR Shopping List
 
-- **Timestamp:** `2024-11-08T22:27:19.7259964Z`
-- **Event:** The user "myykal" created a file named `tor-shopping-list.txt` on the desktop, potentially indicating a list or notes related to their TOR browser activities.
+- **Timestamp:** `May 12, 2025 4:57:46pm`
+- **Event:** The user "mykal" created a file named `tor-shopping-list.txt` on the desktop, potentially indicating a list or notes related to their TOR browser activities.
 - **Action:** File creation detected.
 - **File Path:** `C:\Users\mykal\Desktop\tor-shopping-list.txt`
 
